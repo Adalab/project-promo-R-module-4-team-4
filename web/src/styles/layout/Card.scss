@@ -1,0 +1,13 @@
+@import '../core/responsive';
+@import '../core/mixins';
+@import '../core/function';
+@import '../core/variables';
+
+.mainCreate {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    min-height: 79vh;
+  }
+}

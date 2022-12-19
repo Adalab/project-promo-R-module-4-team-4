@@ -1,0 +1,166 @@
+@import '../core/responsive';
+@import '../core/mixins';
+@import '../core/function';
+@import '../core/variables';
+
+.preview {
+  background: linear-gradient(to bottom, $color-preview1, $color-preview2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: rem(38);
+  border-radius: rem(6);
+
+  @include tablet {
+    flex-direction: column;
+    padding-bottom: rem(200);
+    margin-right: rem(30);
+    flex-grow: 1;
+  }
+
+  @include desktop {
+    flex-grow: 2;
+  }
+
+  &__align {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+  }
+
+  &__container {
+    background-color: $color-whireOriginal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+    max-width: rem(240);
+    max-height: rem(340);
+  }
+
+  &__name {
+    font-family: $font-Mont;
+    font-weight: bold;
+    color: $color-darkGreen;
+    font-size: rem(18);
+    border-left: solid $color-start rem(5);
+    padding-left: rem(15);
+    padding-bottom: rem(5);
+    margin-top: rem(20);
+    text-transform: capitalize;
+  }
+
+  &__job {
+    font-family: $font-Mont;
+    color: $color_gunMetal;
+    border-left: solid $color-start rem(5);
+    padding-left: rem(15);
+    margin-bottom: rem(10);
+  }
+
+  &__img {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(../../images/preview-girl.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: rem(10);
+    padding: rem(10);
+    margin-left: rem(10);
+    margin-bottom: rem(5);
+
+    &--color {
+      color: $color-darkGreen;
+      border: solid 2px $color-input;
+      border-radius: rem(16);
+      padding: rem(5);
+    }
+  }
+
+  &__card--flowers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:absolute;
+    top:-60px;
+  }
+
+  @keyframes __card--flowers {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+
+    50% {
+
+      opacity: 1;
+    }
+
+    70% {
+
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(80vh);
+      opacity: 0;
+    }
+
+  }
+
+  &__card--flowers img {
+    width: 30px;
+    animation: __card--flowers 7s linear infinite;
+  }
+
+}
+
+.preview__card--flowers img:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.preview__card--flowers img:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.preview__card--flowers img:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.preview__card--flowers img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+.preview__card--flowers img:nth-child(6) {
+  animation-delay: 3s;
+}
+
+.preview__card--flowers img:nth-child(7) {
+  animation-delay: 6s;
+}
+
+.preview__card--flowers img:nth-child(8) {
+  animation-delay: 7s;
+}
+
+.preview__card--flowers img:nth-child(9) {
+  animation-delay: 1.5s;
+}
+
+.preview__card--flowers img:nth-child(10) {
+  animation-delay: 2s;
+}
+
+.logoplus {
+  width: 60px;
+  height: 40px;
+}

@@ -1,0 +1,147 @@
+@import '../core/responsive';
+@import '../core/mixins';
+@import '../core/function';
+@import '../core/variables';
+@import '../components/jsarrow';
+
+.container-form {
+
+  max-width: 673px;
+
+  @include tablet {
+    flex-grow: 2;
+  }
+
+  @include desktop {
+    flex-grow: 1;
+  }
+}
+
+.design {
+  padding: rem(27) rem(20) rem(10) rem(20);
+  //border-bottom: rem(1) solid $color-lineFormulary;
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &__legend {
+    @include form-title;
+
+    &--icon {
+      @include icons;
+    }
+  }
+
+  &__palette {
+    padding-top: rem(20);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__span {
+      font-family: $font-Open;
+      font-size: rem(14);
+      color: $color_gunMetal;
+      text-transform: uppercase;
+      margin-left: rem(15);
+      margin-top: rem(10);
+    }
+
+    &__radio {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: rem(20);
+      margin-top: rem(15);
+
+
+      &--colors {
+        display: flex;
+        flex-direction: row;
+        gap: rem(5);
+      }
+    }
+
+    &__1 {
+      display: flex;
+    }
+
+    &__2 {
+      display: flex;
+    }
+
+    &__3 {
+      display: flex;
+    }
+  }
+}
+
+.border_button {
+  @include border_button;
+}
+
+/**************START RADIO BUTTONS PALETTES***************/
+/*START First radio button*/
+.dark-green {
+  background-color: $color-darkGreen;
+  width: 30px;
+  height: 25px;
+}
+
+.dirty-blue {
+  background-color: $color-dirty-blue;
+  width: 30px;
+  height: 25px;
+}
+
+.hospital-green {
+  background-color: $color-hospital-green;
+  width: 30px;
+  height: 25px;
+}
+
+/*START Second radio button*/
+
+.dried-blood {
+  background-color: $color-blood;
+  width: 30px;
+  height: 25px;
+}
+
+.rusty-red {
+  background-color: $color-rustyRed;
+  width: 30px;
+  height: 25px;
+}
+
+.tomato {
+  background-color: $color-tomate;
+  width: 30px;
+  height: 25px;
+}
+
+/*START Third radio button*/
+
+.slate {
+  background-color: $color-slate;
+  width: 30px;
+  height: 25px;
+}
+
+.faded-orange {
+  background-color: $color-fadedOrange;
+  width: 30px;
+  height: 25px;
+}
+
+.light-grey-blue {
+  background-color: $color-lightGrey;
+  width: 30px;
+  height: 25px;
+}
+
+/**************END RADIO BUTTONS PALETTES***************/
