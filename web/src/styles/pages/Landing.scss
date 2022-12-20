@@ -4,7 +4,7 @@
 @import '../core/function';
 @import '../core/variables';
 .main {
-  height: 84vh;
+  // height: 84vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,19 +13,19 @@
   padding-left: rem(25.6);
   padding-right: rem(26.4);
   @include tablet {
-    height: rem(963);
+    // height: rem(963);
     padding: 0 rem(174) rem(60) rem(175);
   }
   &__img {
     width: rem(250);
-    height: rem(63);
-    margin-top: rem(95);
-    margin-top: 10%;
+    // height: rem(63);
+    margin-top: rem(45);
+    // margin-top: 5%;
     margin-bottom: rem(35.4);
     @include tablet {
-      margin-top: rem(350);
+      margin-top: rem(100);
       width: rem(419);
-      height: rem(105);
+      // height: rem(105);
       margin-bottom: rem(31);
     }
   }
@@ -43,7 +43,7 @@
     color: $color-darkGreen;
     font-family: $font-Open;
     font-size: rem(12.8);
-    
+
     margin-bottom: rem(17.8);
     text-align: center;
     line-height: rem(15);
@@ -62,12 +62,12 @@
     gap: rem(24);
     padding: rem(15) rem(20) rem(17.8) rem(20);
     margin-top: rem(17.8);
-    margin-bottom: rem(38.6);
+    margin-bottom: rem(20.6);
     @include tablet {
       padding: rem(15) rem(31.5) rem(22) rem(31.5);
       border: solid rem(2) $color-orange;
       gap: rem(51.5);
-      margin-bottom: rem(186);
+      margin-bottom: rem(60);
     }
     &--item {
       display: flex;
@@ -101,10 +101,10 @@
     border-radius: rem(50);
     text-decoration: none;
     text-transform: uppercase;
-   @include tablet {
+    margin-bottom: 30px;
+    @include tablet {
       font-size: rem(16);
       padding: rem(10) rem(20.5);
-      
     }
   }
 }

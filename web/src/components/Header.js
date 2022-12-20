@@ -1,5 +1,5 @@
 import '../styles/layout/Header.scss';
-import logoCards from '../images/logo-awesome.svg';
+import logoCards from '../images/logo-duquesas-2.png';
 import { NavLink } from 'react-router-dom';
 
 function Header() {

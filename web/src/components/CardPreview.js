@@ -4,7 +4,7 @@ import defaultPhoto2 from '../images/preview2.jpg';
 import defaultPhoto3 from '../images/preview3.jpg';
 import { NavLink } from 'react-router-dom';
 
-import logoCards from '../images/logo-awesome.svg';
+import logoCards from '../images/logo-duquesas-3.png';
 
 function CardPreview(props) {
   const defaultPhotos = [defaultPhoto1, defaultPhoto2, defaultPhoto3];

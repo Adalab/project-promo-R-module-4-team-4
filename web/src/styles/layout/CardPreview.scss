@@ -90,8 +90,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position:absolute;
-    top:-60px;
+    position: absolute;
+    top: -60px;
   }
 
   @keyframes __card--flowers {
@@ -101,12 +101,10 @@
     }
 
     50% {
-
       opacity: 1;
     }
 
     70% {
-
       opacity: 1;
     }
 
@@ -114,14 +112,12 @@
       transform: translateY(80vh);
       opacity: 0;
     }
-
   }
 
   &__card--flowers img {
     width: 30px;
     animation: __card--flowers 7s linear infinite;
   }
-
 }
 
 .preview__card--flowers img:nth-child(1) {
@@ -161,6 +157,6 @@
 }
 
 .logoplus {
-  width: 60px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }

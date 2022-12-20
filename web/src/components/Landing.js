@@ -1,6 +1,6 @@
 import './../styles/pages/Landing.scss'
 import { NavLink } from 'react-router-dom';
-import logoCards from '../images/logo-awesome.svg';
+import logoCards from '../images/logo-duquesas.png';
 import flower from '../images/flower2.png';
 const Landing = () => {
     return (
