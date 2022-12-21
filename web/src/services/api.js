@@ -1,5 +1,5 @@
 const callToApi = (data) => {
-  return fetch('https://dev.adalab.es/api/card', {
+  return fetch("http://localhost:4000/card", {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
@@ -9,12 +9,14 @@ const callToApi = (data) => {
     .then((response) => response.json())
 
     .then((response) => {
+      console.log(response)
       if (response.success) {
         return response;
       } else {
         console.log(response.error);
         const errorResponse = {
           success: response.success,
+          //esto nos permite controlar lo que vamos a decir en el error para que no muestre el que está por defecto.
           error: 'Error al enviar los datos. Por favor revisa el formulario.',
         };
         return errorResponse;
