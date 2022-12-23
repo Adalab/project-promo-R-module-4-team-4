@@ -74,6 +74,22 @@ const Fill = (props) => {
             value={props.data.job}
           />
         </label>
+        <label
+          htmlFor="job-position"
+          className="fill__label fill__label--jobposition">
+          <span className="fill__label__text--jobposition">
+            Rango salarial requerido<span className="asterisc">*</span>
+          </span>
+          <select className='select'
+           name='salary'
+           id='salary'
+            onChange={handleChange}
+            >
+              <option value="1">30.000-40.000</option>
+              <option value="2">40.000-50.000</option>
+              <option value="3"> >=60.000</option>
+             </select> 
+        </label>
         <ImageReader photo={props.data.photo} handleImage={handleImage} />
         <label htmlFor="email" className="fill__label fill__label--email">
           <span className="fill__label__text--email">
@@ -138,6 +154,23 @@ const Fill = (props) => {
             onChange={handleChange}
             required
             value={props.data.github}
+          />
+        </label>
+        <label
+          htmlFor="job-position"
+          className="fill__label fill__label--jobposition">
+          <span className="fill__label__text--jobposition">
+            Informacion adicional<span className="asterisc">*</span>
+          </span>
+          <input
+            className="fill__input fill__input--jobposition js-input js_input_job"
+            type="text"
+            name="job"
+            id="job-position"
+            placeholder="Ej: Mi especialidad es.... Me gustaria trabajar con..."
+            onChange={handleChange}
+            required
+            value={props.data.job}
           />
         </label>
       </div>

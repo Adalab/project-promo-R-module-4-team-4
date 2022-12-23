@@ -21,7 +21,6 @@
     &--icon {
       @include icons;
     }
-
   }
 
   &__label {
@@ -90,4 +89,8 @@
 
 .border_button {
   @include border_button;
+}
+
+.div-image-work {
+  display: flex;
 }

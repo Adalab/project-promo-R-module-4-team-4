@@ -51,6 +51,8 @@ const ImageReader = (props) => {
   fileReader.addEventListener('load', getImage);
 
   return (
+    <div className='div-image-work'>
+    <div>
     <label
       htmlFor="profile-image"
       className="fill__label fill__label--profileimage">
@@ -75,6 +77,32 @@ const ImageReader = (props) => {
           style={{ backgroundImage: `url(${props.photo})` }}></div>
       </div>
     </label>
+    </div>
+    <div>
+    <label
+          htmlFor="job-position"
+          className="fill__label fill__label--jobposition">
+          <span className="fill__label__text--jobposition">
+            Actualmente trabajando:<span className="asterisc">*</span>
+          </span>
+          
+          <label htmlFor='SI'>
+            <input
+            id=''
+            type="radio"
+            value="SI"
+            name="si"
+            /> SI</label>
+            <label htmlFor='NO'>
+            <input
+            id=''
+            type="radio"
+            value="NO"
+            name="NO"
+            /> NO</label>
+        </label>
+    </div>
+    </div>
   );
 };
 
