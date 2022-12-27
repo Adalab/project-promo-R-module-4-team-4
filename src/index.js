@@ -12,7 +12,8 @@ server.set('view engine', 'ejs');
 
 const db = new Database('./src/db/cards.db', { verbose: console.log });
 
-const serverPort = 4000;
+//serverPort es igual al PORT (variable de entorno del sistema operativo) o si está vacío es igual a 4000
+const serverPort = process.env.PORT || 4000;
 server.listen(serverPort, () => {
   console.log(`Server listening at http://localhost:${serverPort}`);
 });
