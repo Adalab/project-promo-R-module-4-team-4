@@ -14,8 +14,7 @@
 
 <body>
     <section class="preview ">
-        <div class="preview__align"><button class="preview__button"><i
-                    class="fa-regular fa-trash-can preview__button--can"></i> Reset</button>
+        <div class="preview__align">
             <article class="preview__container js-mother-of-palettes palette-1">
                 <h2 class="preview__name">
                     <%= name %>
@@ -24,7 +23,7 @@
                     <%= job %>
                 </h3>
                 <!-- Faltaría que se vea la imagen de la tarjeta -->
-                <div class="preview__img js__profile-image">
+                <div class="preview__img js__profile-image" style="background-image: url('<%= photo %>')">
                 </div>
                 <ul class="preview__icons">
                     <li><a href="tel:<%=phone%>" target="_blank" class="telephone" rel="noreferrer"><i
