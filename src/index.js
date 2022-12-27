@@ -32,10 +32,10 @@ server.post('/card', (req, res) => {
   }
 
   if (success === true) {
-    const newCard = {
-      id: uuidv4(),
-      ...req.body,
-    };
+    // const newCard = {
+    //   id: uuidv4(),
+    //   ...req.body,
+    // };
     // savedCards.push(newCard);
     //Guardamos la tarjeta en la base de datos con un INSERT
     const insertStmt = db.prepare(
@@ -53,7 +53,8 @@ server.post('/card', (req, res) => {
     );
     const responseSuccess = {
       success: true,
-      cardURL: `http://localhost:4000/card/${result.lastInsertRowid}`,
+      //cambiamos la url de localhost a Railway y le ponemos el ID que devuelve el INSERT
+      cardURL: `https://project-promo-r-module-4-team-4-production.up.railway.app/card/${result.lastInsertRowid}`,
     };
     res.json(responseSuccess);
   } else {

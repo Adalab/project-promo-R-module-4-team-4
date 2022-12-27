@@ -1,15 +1,18 @@
 const callToApi = (data) => {
-  return fetch("http://localhost:4000/card", {
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
+  return fetch(
+    'https://project-promo-r-module-4-team-4-production.up.railway.app/card',
+    {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  )
     .then((response) => response.json())
 
     .then((response) => {
-      console.log(response)
+      console.log(response);
       if (response.success) {
         return response;
       } else {
