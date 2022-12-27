@@ -80,15 +80,15 @@ const Fill = (props) => {
           <span className="fill__label__text--jobposition">
             Rango salarial requerido<span className="asterisc">*</span>
           </span>
-          <select className='select'
-           name='salary'
-           id='salary'
-            onChange={handleChange}
-            >
-              <option value="1">30.000-40.000</option>
-              <option value="2">40.000-50.000</option>
-              <option value="3"> >=60.000</option>
-             </select> 
+          <select
+            className="select"
+            name="salary"
+            id="salary"
+            onChange={handleChange}>
+            <option value="1">30.000-40.000</option>
+            <option value="2">40.000-50.000</option>
+            <option value="3"> &gt;=60.000</option>
+          </select>
         </label>
         <ImageReader photo={props.data.photo} handleImage={handleImage} />
         <label htmlFor="email" className="fill__label fill__label--email">
