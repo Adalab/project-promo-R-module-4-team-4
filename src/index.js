@@ -39,7 +39,7 @@ server.post('/card', (req, res) => {
     // savedCards.push(newCard);
     //Guardamos la tarjeta en la base de datos con un INSERT
     const insertStmt = db.prepare(
-      'INSERT INTO card (palette,name,email,photo,phone,linkedin,github,job) VALUES (?,?,?,?,?,?,?,?)'
+      'INSERT INTO userCards (palette,name,email,photo,phone,linkedin,github,job) VALUES (?,?,?,?,?,?,?,?)'
     );
     const result = insertStmt.run(
       req.body.palette,
