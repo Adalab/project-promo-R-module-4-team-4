@@ -6,6 +6,8 @@ import { NavLink } from 'react-router-dom';
 
 import logoCards from '../images/logo-duquesas-3.png';
 
+
+
 function CardPreview(props) {
   const defaultPhotos = [defaultPhoto1, defaultPhoto2, defaultPhoto3];
   const photo = props.data.photo
@@ -21,6 +23,16 @@ function CardPreview(props) {
   };
   const linkedinUrl = `https://www.linkedin.com/in/${props.getLinkedinUser()}`;
   const githubUrl = `https://github.com/${props.getGithubUser()}`;
+
+  const salaryText = () => {
+    if (props.data.salary === "1") {
+      return "30.000-40.000";
+    } else if (props.data.salary === "2"){
+      return "40.000-50.000"
+    } else {
+      return ">=50.000"
+    }
+  }
 
   return (
     <article
@@ -70,6 +82,15 @@ function CardPreview(props) {
             rel="noreferrer">
             <i className="fa-brands fa-github-alt preview__icons--color"></i>
           </a>
+        </li>
+        <li>
+        <p>{salaryText()}</p>
+        </li>
+        <li>
+        <p>{props.data.additionalInfo}</p>
+        </li>
+        <li>
+        <p>{props.data.openToWork}</p>
         </li>
         <li>
           <NavLink to="/" className="github" rel="noreferrer">

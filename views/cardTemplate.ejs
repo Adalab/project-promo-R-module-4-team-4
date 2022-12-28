@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/main.css" />
     <title>Las Duquesas - Aristocratic profile-cards</title>
-</head>
+  </head>
 
-<body>
-    <section class="preview ">
-        <div class="preview__align">
-            <article class="preview__container js-mother-of-palettes palette-1">
-                <h2 class="preview__name">
-                    <%= name %>
-                </h2>
-                <h3 class="preview__job">
-                    <%= job %>
-                </h3>
-                <!-- Faltaría que se vea la imagen de la tarjeta -->
-                <div class="preview__img js__profile-image" style="background-image: url('<%= photo %>')">
-                </div>
-                <ul class="preview__icons">
-                    <li><a href="tel:<%=phone%>" target="_blank" class="telephone" rel="noreferrer"><i
-                                class="fa-solid fa-mobile-screen-button preview__icons--color"></i></a></li>
-                    <li><a href="mailto:<%=email%>" target="_blank" class="emailadress" rel="noreferrer"><i
-                                class="fa-regular fa-envelope preview__icons--color"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/<%=linkedin%>" target="_blank" class="linkedin"
-                            rel="noreferrer"><i class="fa-brands fa-linkedin-in preview__icons--color"></i></a></li>
-                    <li><a href="https://github.com/<%=github%>" target="_blank" class="github" rel="noreferrer"><i
-                                class="fa-brands fa-github-alt preview__icons--color"></i></a></li>
-                    <li><a rel="noreferrer" class="github" href="#/"><img class="preview__icons--color logoplus"
-                                src="./static/media/logo-awesome.a65df2b29ae175808f920215242d8683.svg"
-                                alt="Logo Home"></a></li>
-                </ul>
-            </article>
-        </div>
+  <body>
+    <section class="preview">
+      <div class="preview__align">
+        <article class="preview__container js-mother-of-palettes palette-1">
+          <h2 class="preview__name"><%= name %></h2>
+          <h3 class="preview__job"><%= job %></h3>
+          <!-- Faltaría que se vea la imagen de la tarjeta -->
+          <div
+            class="preview__img js__profile-image"
+            style="background-image: url('<%= photo %>')"
+          ></div>
+          <ul class="preview__icons">
+            <li>
+              <a
+                href="tel:<%=phone%>"
+                target="_blank"
+                class="telephone"
+                rel="noreferrer"
+                ><i
+                  class="fa-solid fa-mobile-screen-button preview__icons--color"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:<%=email%>"
+                target="_blank"
+                class="emailadress"
+                rel="noreferrer"
+                ><i class="fa-regular fa-envelope preview__icons--color"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/<%=linkedin%>"
+                target="_blank"
+                class="linkedin"
+                rel="noreferrer"
+                ><i class="fa-brands fa-linkedin-in preview__icons--color"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/<%=github%>"
+                target="_blank"
+                class="github"
+                rel="noreferrer"
+                ><i class="fa-brands fa-github-alt preview__icons--color"></i
+              ></a>
+            </li>
+            <li>
+              <a rel="noreferrer" class="github" href="#/"
+                ><img
+                  class="preview__icons--color logoplus"
+                  src="./static/media/logo-awesome.a65df2b29ae175808f920215242d8683.svg"
+                  alt="Logo Home"
+              /></a>
+            </li>
+            <li>
+              <p><%=salary%></p>
+            </li>
+            <li>
+              <p><%=additionalInfo%></p>
+            </li>
+            <li>
+              <p><%=openToWork%></p>
+            </li>
+            <li></li>
+          </ul>
+        </article>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>

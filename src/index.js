@@ -39,7 +39,7 @@ server.post('/card', (req, res) => {
     // savedCards.push(newCard);
     //Guardamos la tarjeta en la base de datos con un INSERT
     const insertStmt = db.prepare(
-      'INSERT INTO userCards (palette,name,email,photo,phone,linkedin,github,job) VALUES (?,?,?,?,?,?,?,?)'
+      'INSERT INTO userCards (palette,name,email,photo,phone,linkedin,github,job,salary,openToWork,additionalInfo) VALUES (?,?,?,?,?,?,?,?,?,?,?)'
     );
     const result = insertStmt.run(
       req.body.palette,
@@ -49,7 +49,11 @@ server.post('/card', (req, res) => {
       req.body.phone,
       req.body.linkedin,
       req.body.github,
-      req.body.job
+      req.body.job,
+      req.body.salary,
+      req.body.openToWork,
+      req.body.additionalInfo
+
     );
     const responseSuccess = {
       success: true,
@@ -74,8 +78,31 @@ server.get('/card/:id', (req, res) => {
   //ejecuto la query y me devuelve los datos de la tarjeta que correspondan con el id de la url
   const userCard = query.get(id);
   console.log(userCard);
+  const salaryText = () => {
+    if (userCard.salary === "1") {
+      return "30.000-40.000";
+    } else if (userCard.salary === "2"){
+      return "40.000-50.000"
+    } else {
+      return ">=50.000"
+    }
+  }
+  const userCardFinal = {
+      palette: userCard.palette,
+      name: userCard.name,
+      job: userCard.job,
+      phone: userCard.phone,
+      email: userCard.email,
+      linkedin: userCard.linkedin,
+      github: userCard.github,
+      photo: userCard.photo,
+      salary: salaryText(),
+      openToWork: userCard.openToWork,
+      additionalInfo: userCard.additionalInfo,
+
+  }
   //pinto el template de tarjetas con mis datos personalizados (del id de la url)
-  res.render('cardTemplate', userCard);
+  res.render('cardTemplate', userCardFinal);
 });
 console.log('holis');
 

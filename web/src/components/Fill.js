@@ -88,7 +88,7 @@ const Fill = (props) => {
             onChange={handleChange}>
             <option value="1">30.000-40.000</option>
             <option value="2">40.000-50.000</option>
-            <option value="3"> &gt;=60.000</option>
+            <option value="3"> &gt;=50.000</option>
           </select>
         </label>
 
@@ -100,21 +100,23 @@ const Fill = (props) => {
             Actualmente trabajando:<span className="asterisc">*</span>
           </span>
           
-          <label htmlFor='SI'>
+          <label htmlFor='openToWorkSi'>
             <input
             id='openToWorkSi'
             type="radio"
-            value="SI"
+            value="1"
             name="openToWork"
-            checked={props.data.openToWork==='' ? false : props.data.openToWork === 'SI' ? true : false}
+            onChange={handleChange}
+            checked={props.data.openToWork==='' ? false : props.data.openToWork === '1' ? true : false}
             /> SI</label>
-            <label htmlFor='NO'>
+            <label htmlFor='openToWorkNo'>
             <input
             id='openToWorkNo'
             type="radio"
-            value="NO"
+            value="0"
             name="openToWork"
-            checked={props.data.openToWork==='' ? false : props.data.openToWork === 'NO' ? true : false}
+            onChange={handleChange}
+            checked={props.data.openToWork==='' ? false : props.data.openToWork === '0' ? true : false}
             /> NO</label>
         </label>
         <label htmlFor="email" className="fill__label fill__label--email">
