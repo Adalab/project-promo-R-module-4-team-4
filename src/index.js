@@ -32,12 +32,6 @@ server.post('/card', (req, res) => {
   }
 
   if (success === true) {
-    // const newCard = {
-    //   id: uuidv4(),
-    //   ...req.body,
-    // };
-    // savedCards.push(newCard);
-    //Guardamos la tarjeta en la base de datos con un INSERT
     const insertStmt = db.prepare(
       'INSERT INTO userCards (palette,name,email,photo,phone,linkedin,github,job,salary,openToWork,additionalInfo) VALUES (?,?,?,?,?,?,?,?,?,?,?)'
     );
@@ -53,7 +47,6 @@ server.post('/card', (req, res) => {
       req.body.salary,
       req.body.openToWork,
       req.body.additionalInfo
-
     );
     const responseSuccess = {
       success: true,
@@ -79,28 +72,27 @@ server.get('/card/:id', (req, res) => {
   const userCard = query.get(id);
   console.log(userCard);
   const salaryText = () => {
-    if (userCard.salary === "1") {
-      return "30.000-40.000";
-    } else if (userCard.salary === "2"){
-      return "40.000-50.000"
+    if (userCard.salary === '1') {
+      return '30.000-40.000';
+    } else if (userCard.salary === '2') {
+      return '40.000-50.000';
     } else {
-      return ">=50.000"
+      return '>=50.000';
     }
-  }
+  };
   const userCardFinal = {
-      palette: userCard.palette,
-      name: userCard.name,
-      job: userCard.job,
-      phone: userCard.phone,
-      email: userCard.email,
-      linkedin: userCard.linkedin,
-      github: userCard.github,
-      photo: userCard.photo,
-      salary: salaryText(),
-      openToWork: userCard.openToWork,
-      additionalInfo: userCard.additionalInfo,
-
-  }
+    palette: userCard.palette,
+    name: userCard.name,
+    job: userCard.job,
+    phone: userCard.phone,
+    email: userCard.email,
+    linkedin: userCard.linkedin,
+    github: userCard.github,
+    photo: userCard.photo,
+    salary: salaryText(),
+    openToWork: userCard.openToWork,
+    additionalInfo: userCard.additionalInfo,
+  };
   //pinto el template de tarjetas con mis datos personalizados (del id de la url)
   res.render('cardTemplate', userCardFinal);
 });
