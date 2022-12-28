@@ -1,28 +1,32 @@
 .palette-1 {
 
-        .preview__name{
-            color: $color-darkGreen;
-            border-left: solid $color-start rem(5);
-        }
-        .preview__job {
-            color: $color-start;
-        }
-        .preview__icons--color {
-            color: $color-darkGreen;
-            border:solid 2px $color-input;
-        }
+    .preview__name {
+        color: $color-darkGreen;
+        border-left: solid $color-start rem(5);
+    }
+
+    .preview__job {
+        color: $color-start;
+    }
+
+    .preview__icons--color {
+        color: $color-darkGreen;
+        border: solid 2px $color-input;
+    }
 }
 
 .palette-2 {
 
-    .preview__name{
+    .preview__name {
         color: $color-blood;
         border-left: solid $color-rustyRed rem(5);
     }
+
     .preview__job {
         color: $color-rustyRed;
         border-left: solid $color-rustyRed rem(5);
     }
+
     .preview__icons--color {
         color: $color-blood;
         border: solid 2px $color-tomate;
@@ -31,16 +35,127 @@
 
 .palette-3 {
 
-    .preview__name{
+    .preview__name {
         color: $color-slate;
         border-left: solid $color-fadedOrange rem(5);
     }
+
     .preview__job {
         color: $color-fadedOrange;
         border-left: solid $color-fadedOrange rem(5);
     }
+
     .preview__icons--color {
         color: $color-slate;
-        border:solid 2px $color-lightGrey;
+        border: solid 2px $color-lightGrey;
+    }
+}
+
+/******NUEVOS ESTILOS******/
+
+.palette-1 {
+
+    .our-team .picture::before {
+        background-color: $color-darkGreen;
+    }
+
+    .our-team .picture::after {
+        background-color: $color-start;
+    }
+
+    .our-team .social {
+        background-color: $color-start;
+    }
+
+    .our-team .social .preview-icon {
+        border: solid 2px $color-input;
+        background-color: white;
+    }
+
+    .our-team .name {
+        color: $color-darkGreen;
+    }
+
+    .our-team .title {
+        color: $color-darkGreen;
+    }
+
+    .our-team .info {
+        color: $color-start;
+    }
+
+    .our-team .salary {
+        color: $color-start;
+    }
+}
+
+.palette-2 {
+    .our-team .picture::before {
+        background-color: $color-rustyRed;
+    }
+
+    .our-team .picture::after {
+        background-color: $color-blood;
+    }
+
+    .our-team .social {
+        background-color: $color-blood;
+    }
+
+    .our-team .social .preview-icon {
+        border: solid 2px $color-tomate;
+        background-color: white;
+    }
+
+    .our-team .name {
+        color: $color-blood;
+    }
+
+    .our-team .title {
+        color: $color-blood;
+    }
+
+    .our-team .info {
+        color: $color-rustyRed;
+    }
+
+    .our-team .salary {
+        color: $color-rustyRed;
+    }
+}
+
+.palette-3 {
+
+    .our-team .picture::before {
+        background-color: $color-slate;
+    }
+
+    .our-team .picture::after {
+        background-color: $color-fadedOrange;
+    }
+
+    .our-team .social {
+        background-color: $color-fadedOrange;
+    }
+
+    .our-team .social .preview-icon {
+        border: solid 2px $color-lightGrey;
+        background-color: white;
+    }
+
+    .our-team .name {
+        color: $color-slate;
+    }
+
+    .our-team .title {
+        color: $color-slate;
+    }
+
+    .our-team .info {
+        color: $color-fadedOrange;
+    }
+
+    .our-team .salary {
+        color: $color-fadedOrange;
     }
 }
