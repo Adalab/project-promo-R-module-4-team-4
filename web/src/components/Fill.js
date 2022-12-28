@@ -84,13 +84,39 @@ const Fill = (props) => {
             className="select"
             name="salary"
             id="salary"
+            value = {props.data.salary}
             onChange={handleChange}>
             <option value="1">30.000-40.000</option>
             <option value="2">40.000-50.000</option>
             <option value="3"> &gt;=60.000</option>
           </select>
         </label>
+
         <ImageReader photo={props.data.photo} handleImage={handleImage} />
+        <label
+          htmlFor="openToWork"
+          className="fill__label fill__label--jobposition">
+          <span className="fill__label__text--jobposition">
+            Actualmente trabajando:<span className="asterisc">*</span>
+          </span>
+          
+          <label htmlFor='SI'>
+            <input
+            id='openToWorkSi'
+            type="radio"
+            value="SI"
+            name="openToWork"
+            checked={props.data.openToWork==='' ? false : props.data.openToWork === 'SI' ? true : false}
+            /> SI</label>
+            <label htmlFor='NO'>
+            <input
+            id='openToWorkNo'
+            type="radio"
+            value="NO"
+            name="openToWork"
+            checked={props.data.openToWork==='' ? false : props.data.openToWork === 'NO' ? true : false}
+            /> NO</label>
+        </label>
         <label htmlFor="email" className="fill__label fill__label--email">
           <span className="fill__label__text--email">
             Email<span className="asterisc">*</span>
@@ -157,7 +183,7 @@ const Fill = (props) => {
           />
         </label>
         <label
-          htmlFor="job-position"
+          htmlFor="additionalInfo"
           className="fill__label fill__label--jobposition">
           <span className="fill__label__text--jobposition">
             Informacion adicional<span className="asterisc">*</span>
@@ -165,12 +191,12 @@ const Fill = (props) => {
           <input
             className="fill__input fill__input--jobposition js-input js_input_job"
             type="text"
-            name="job"
-            id="job-position"
+            name="additionalInfo"
+            id="additionalInfo"
             placeholder="Ej: Mi especialidad es.... Me gustaria trabajar con..."
             onChange={handleChange}
             required
-            value={props.data.job}
+            value={props.data.additionalInfo}
           />
         </label>
       </div>

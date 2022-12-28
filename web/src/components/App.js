@@ -23,6 +23,9 @@ function App() {
       linkedin: '',
       github: '',
       photo: '',
+      salary: '1',
+      openToWork: '',
+      additionalInfo: '',
     })
   );
 
@@ -80,6 +83,9 @@ function App() {
       linkedin: '',
       github: '',
       photo: '',
+      salary: '1',
+      openToWork: '',
+      additionalInfo: '',
     });
     setCardResponseFetch({});
   };
