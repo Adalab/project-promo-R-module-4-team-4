@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.7281abf8.css",
-    "main.js": "./static/js/main.40767e1a.js",
+    "main.js": "./static/js/main.7028fb76.js",
     "static/media/preview-girl.png": "./static/media/preview-girl.d43ff4868800fc83a9a3.png",
     "static/media/flower2.png": "./static/media/flower2.7a9a8bf713ad4388912f.png",
     "static/media/preview2.jpg": "./static/media/preview2.a480c84b1dd0bf541818.jpg",
@@ -11,10 +11,10 @@
     "static/media/logo-duquesas-2.png": "./static/media/logo-duquesas-2.82b8cc33899819c34230.png",
     "index.html": "./index.html",
     "main.7281abf8.css.map": "./static/css/main.7281abf8.css.map",
-    "main.40767e1a.js.map": "./static/js/main.40767e1a.js.map"
+    "main.7028fb76.js.map": "./static/js/main.7028fb76.js.map"
   },
   "entrypoints": [
     "static/css/main.7281abf8.css",
-    "static/js/main.40767e1a.js"
+    "static/js/main.7028fb76.js"
   ]
 }
