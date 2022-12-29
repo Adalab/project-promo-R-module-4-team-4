@@ -115,5 +115,9 @@
     margin: rem(5) auto;
   }
 }
+.error-msg {
+  font-family: $font-Open;
+  font-size: rem(18);
+}
 
 @import '../components/jsarrow';

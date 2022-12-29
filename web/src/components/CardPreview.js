@@ -2,12 +2,13 @@ import '../styles/layout/CardPreview.scss';
 import defaultPhoto1 from '../images/preview1.jpg';
 import defaultPhoto2 from '../images/preview2.jpg';
 import defaultPhoto3 from '../images/preview3.jpg';
+import defaultPhoto4 from '../images/preview4.jpg';
 import { NavLink } from 'react-router-dom';
 
 import logoCards from '../images/logo-duquesas-3.png';
 
 function CardPreview(props) {
-  const defaultPhotos = [defaultPhoto1, defaultPhoto2, defaultPhoto3];
+  const defaultPhotos = [defaultPhoto1, defaultPhoto2, defaultPhoto3, defaultPhoto4];
   const photo = props.data.photo
     ? props.data.photo
     : defaultPhotos[props.data.palette - 1];
@@ -67,7 +68,7 @@ function CardPreview(props) {
                 <a
                   href={`tel:${props.data.phone}`}
                   target="_blank"
-                  className="telephone"
+                  className="telephone a"
                   rel="noreferrer">
                   <i className="preview-icon fa-solid fa-mobile-screen-button preview__icons--color"></i>
                 </a>
@@ -76,7 +77,7 @@ function CardPreview(props) {
                 <a
                   href={`mailto:${props.data.email}`}
                   target="_blank"
-                  className="emailadress"
+                  className="emailadress a"
                   rel="noreferrer">
                   <i className="preview-icon fa-regular fa-envelope preview__icons--color"></i>
                 </a>
@@ -85,7 +86,7 @@ function CardPreview(props) {
                 <a
                   href={linkedinUrl}
                   target="_blank"
-                  className="linkedin"
+                  className="linkedin a"
                   rel="noreferrer">
                   <i className="preview-icon fa-brands fa-linkedin-in preview__icons--color"></i>
                 </a>
@@ -94,13 +95,13 @@ function CardPreview(props) {
                 <a
                   href={githubUrl}
                   target="_blank"
-                  className="github"
+                  className="github a"
                   rel="noreferrer">
                   <i className="preview-icon fa-brands fa-github-alt preview__icons--color"></i>
                 </a>
               </li>
-              <li>
-                <NavLink to="/" className="github" rel="noreferrer">
+              <li className='li'>
+                <NavLink to="/" className="githubb" rel="noreferrer">
                   <img
                     className="preview-icon preview__icons--color logoplus"
                     src={logoCards}

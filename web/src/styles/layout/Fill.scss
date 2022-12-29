@@ -4,6 +4,7 @@
 @import '../core/variables';
 @import '../components/jsarrow';
 
+
 .fill {
   padding: 0 rem(20) rem(10) rem(20);
   cursor: pointer;
@@ -38,7 +39,10 @@
         margin-bottom: rem(7);
         margin-top: rem(25);
       }
-
+      &--select{
+        font: $font-Open;
+        color:$color_gunMetal;
+      }
       &--jobposition,
       &--email,
       &--telefono,
@@ -48,6 +52,7 @@
         @include form-label;
         margin-bottom: rem(7);
         margin-top: rem(7);
+        font: $font-Open;
       }
     }
 
@@ -97,4 +102,12 @@
 
 .fill__label--open {
   font-family: $font-Open;
+}
+.select{
+  width: rem(120);
+  height: rem(30);
+  margin: rem(3) rem(74) rem(5) rem(3);
+  border: solid 1px $color-input;
+  background-position: center;
+  background-size: cover;
 }

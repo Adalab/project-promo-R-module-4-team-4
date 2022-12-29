@@ -157,10 +157,11 @@
 }
 
 .logoplus {
+  margin-top: 10px;
   width: 30px;
   height: 30px;
+  margin-bottom: 0;
 }
-
 
 /*****************NUEVOS ESTILOS***********/
 // body {
@@ -189,7 +190,6 @@
   text-align: center;
   overflow: hidden;
   position: relative;
-
 }
 
 .our-team .picture {
@@ -202,7 +202,7 @@
 }
 
 .our-team .picture::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 0;
   border-radius: 50%;
@@ -221,7 +221,7 @@
 }
 
 .our-team .picture::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -288,13 +288,21 @@
 .our-team .social li a {
   display: block;
   padding: 10px;
-  font-size: 17px;
+  // font-size: 17px;
   color: white;
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
 
-.our-team .social li a:hover {
+.our-team .social .github {
+  display: block;
+  // padding: 10px;
+  // font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.our-team .social li .a:hover {
   // color: $color-orange;
   background-color: #f7f5ec;
 }
@@ -305,4 +313,7 @@
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   color: $color_gunMetal;
+}
+.li {
+  transform: translate(0, 7px);
 }
