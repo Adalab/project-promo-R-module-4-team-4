@@ -43,7 +43,7 @@ const Share = (props) => {
             props.cardResponseFetch ? '' : 'collapse'
           }`}>
           {!props.cardResponseFetch.success ? (
-            <p>{props.cardResponseFetch.error}</p>
+            <p className="error-msg">{props.cardResponseFetch.error}</p>
           ) : (
             <div className="container__twitter">
               <h3 className="CardContainer__card js_card_title">

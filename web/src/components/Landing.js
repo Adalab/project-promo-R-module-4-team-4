@@ -22,7 +22,7 @@ const Landing = () => {
         Crea tu tarjeta de visita
     </h1>
     <p className="main__text">
-        Crea mejores contactos profesionales de forma fácil y cómoda
+        Déjanos contribuir en tu futuro profesional
     </p>
 
     <ul className="main__list">
