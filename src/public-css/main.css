@@ -630,15 +630,6 @@ body {
 .palette-3 .our-team .salary {
   color: #eab052;
 }
-.main {
-  align-items: center;
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 1.6rem;
-  padding-right: 1.65rem;
-}
 
 .palette-4 .our-team .picture:before {
   background-color: #210124;
@@ -650,6 +641,8 @@ body {
 .palette-4 .our-team .social .preview-icon {
   background-color: #fff;
   border: 2px solid #b8b8ff;
+  border-radius: 50%;
+  padding: 5px;
 }
 .palette-4 .our-team .name,
 .palette-4 .our-team .title {
@@ -658,6 +651,16 @@ body {
 .palette-4 .our-team .info,
 .palette-4 .our-team .salary {
   color: #750d37;
+}
+
+.main {
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.6rem;
+  padding-right: 1.65rem;
 }
 
 .work-icon {
