@@ -26,7 +26,7 @@ const Design = (props) => {
         }`}>
         <span className="design__palette__span"> Colores</span>
         <div className="design__palette__radio">
-          <label htmlFor="green" className="design__palette__radio--colors">
+          <label htmlFor="1" className="design__palette__radio--colors">
             <input
               className="js-btn-green"
               type="radio"
@@ -42,7 +42,7 @@ const Design = (props) => {
               <div className="design__palette__1--color hospital-green"></div>
             </div>
           </label>
-          <label htmlFor="red" className="design__palette__radio--colors">
+          <label htmlFor="2" className="design__palette__radio--colors">
             <input
               className="js-btn-red"
               type="radio"
@@ -58,7 +58,7 @@ const Design = (props) => {
               <div className="design__palette__2--color tomato"></div>
             </div>
           </label>
-          <label htmlFor="grey" className="design__palette__radio--colors">
+          <label htmlFor="3" className="design__palette__radio--colors">
             <input
               className="js-btn-grey"
               type="radio"
@@ -74,20 +74,20 @@ const Design = (props) => {
               <div className="design__palette__3--color light-grey-blue"></div>
             </div>
           </label>
-          <label htmlFor="grey" className="design__palette__radio--colors">
+          <label htmlFor="4" className="design__palette__radio--colors">
             <input
               className="js-btn-grey"
               type="radio"
               name="palette"
-              id="3"
-              value="3"
+              id="4"
+              value="4"
               onChange={handleChange}
-              checked={props.palette === '3'}
+              checked={props.palette === '4'}
             />
-            <div className="design__palette__3">
-              <div className="design__palette__3--color slate"></div>
-              <div className="design__palette__3--color faded-orange"></div>
-              <div className="design__palette__3--color light-grey-blue"></div>
+            <div className="design__palette__4">
+              <div className="design__palette__4--color slate"></div>
+              <div className="design__palette__4--color faded-orange"></div>
+              <div className="design__palette__4--color light-grey-blue"></div>
             </div>
           </label>
         </div>
