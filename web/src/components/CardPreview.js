@@ -2,12 +2,13 @@ import '../styles/layout/CardPreview.scss';
 import defaultPhoto1 from '../images/preview1.jpg';
 import defaultPhoto2 from '../images/preview2.jpg';
 import defaultPhoto3 from '../images/preview3.jpg';
+import defaultPhoto4 from '../images/preview4.jpg';
 import { NavLink } from 'react-router-dom';
 
 import logoCards from '../images/logo-duquesas-3.png';
 
 function CardPreview(props) {
-  const defaultPhotos = [defaultPhoto1, defaultPhoto2, defaultPhoto3];
+  const defaultPhotos = [defaultPhoto1, defaultPhoto2, defaultPhoto3, defaultPhoto4];
   const photo = props.data.photo
     ? props.data.photo
     : defaultPhotos[props.data.palette - 1];

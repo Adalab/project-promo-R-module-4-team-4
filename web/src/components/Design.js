@@ -76,7 +76,7 @@ const Design = (props) => {
           </label>
           <label htmlFor="4" className="design__palette__radio--colors">
             <input
-              className="js-btn-grey"
+              className="js-btn-purple"
               type="radio"
               name="palette"
               id="4"
@@ -85,9 +85,9 @@ const Design = (props) => {
               checked={props.palette === '4'}
             />
             <div className="design__palette__4">
-              <div className="design__palette__4--color slate"></div>
-              <div className="design__palette__4--color faded-orange"></div>
-              <div className="design__palette__4--color light-grey-blue"></div>
+              <div className="design__palette__4--color aubergine"></div>
+              <div className="design__palette__4--color purple"></div>
+              <div className="design__palette__4--color lilac"></div>
             </div>
           </label>
         </div>
