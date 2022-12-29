@@ -96,7 +96,6 @@ server.get('/card/:id', (req, res) => {
   //pinto el template de tarjetas con mis datos personalizados (del id de la url)
   res.render('cardTemplate', userCardFinal);
 });
-console.log('holis');
 
 const staticServer = './src/public-react';
 server.use(express.static(staticServer));
