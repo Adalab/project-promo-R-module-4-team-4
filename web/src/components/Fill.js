@@ -84,7 +84,7 @@ const Fill = (props) => {
             className="select"
             name="salary"
             id="salary"
-            value = {props.data.salary}
+            value={props.data.salary}
             onChange={handleChange}>
             <option value="1">30.000-40.000</option>
             <option value="2">40.000-50.000</option>
@@ -97,27 +97,43 @@ const Fill = (props) => {
           htmlFor="openToWork"
           className="fill__label fill__label--jobposition">
           <span className="fill__label__text--jobposition">
-            Actualmente trabajando:<span className="asterisc">*</span>
+            ¿Estás en búsqueda de trabajo?:<span className="asterisc">*</span>
           </span>
-          
-          <label htmlFor='openToWorkSi'>
+
+          <label htmlFor="openToWorkSi">
             <input
-            id='openToWorkSi'
-            type="radio"
-            value="1"
-            name="openToWork"
-            onChange={handleChange}
-            checked={props.data.openToWork==='' ? false : props.data.openToWork === '1' ? true : false}
-            /> SI</label>
-            <label htmlFor='openToWorkNo'>
+              id="openToWorkSi"
+              type="radio"
+              value="1"
+              name="openToWork"
+              onChange={handleChange}
+              checked={
+                props.data.openToWork === ''
+                  ? false
+                  : props.data.openToWork === '1'
+                  ? true
+                  : false
+              }
+            />{' '}
+            SI
+          </label>
+          <label htmlFor="openToWorkNo">
             <input
-            id='openToWorkNo'
-            type="radio"
-            value="0"
-            name="openToWork"
-            onChange={handleChange}
-            checked={props.data.openToWork==='' ? false : props.data.openToWork === '0' ? true : false}
-            /> NO</label>
+              id="openToWorkNo"
+              type="radio"
+              value="0"
+              name="openToWork"
+              onChange={handleChange}
+              checked={
+                props.data.openToWork === ''
+                  ? false
+                  : props.data.openToWork === '0'
+                  ? true
+                  : false
+              }
+            />{' '}
+            NO
+          </label>
         </label>
         <label htmlFor="email" className="fill__label fill__label--email">
           <span className="fill__label__text--email">
