@@ -46,7 +46,12 @@ function CardPreview(props) {
               <div
                 className="img-fluid"
                 style={{ backgroundImage: `url(${photo})` }}></div>
+              <i
+                className={`work-icon fa-solid ${
+                  props.data.openToWork === '1' ? 'fa-lock-open' : 'fa-lock'
+                }`}></i>
             </div>
+
             <div className="team-content">
               <h3 className="name">
                 {previewText('name', 'Nombre Apellidos')}

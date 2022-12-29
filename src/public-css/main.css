@@ -642,3 +642,11 @@ body {
   padding-left: 1.6rem;
   padding-right: 1.65rem;
 }
+
+.work-icon {
+  transform: translate(100px, -55px);
+  font-size: 2rem;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  color: #54585a;
+}
