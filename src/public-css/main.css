@@ -568,7 +568,6 @@ body {
 }
 .palette-1 .our-team .social li a {
   color: #114e4e;
-  
 }
 
 .palette-1 .our-team .name,
@@ -595,7 +594,6 @@ body {
 }
 .palette-2 .our-team .social li a {
   color: #420101;
-  
 }
 
 .palette-2 .our-team .name,
@@ -622,7 +620,6 @@ body {
 }
 .palette-3 .our-team .social li a {
   color: #3e5b65;
-  
 }
 
 .palette-3 .our-team .name,
@@ -643,10 +640,30 @@ body {
   padding-right: 1.65rem;
 }
 
+.palette-4 .our-team .picture:before {
+  background-color: #210124;
+}
+.palette-4 .our-team .picture:after,
+.palette-4 .our-team .social {
+  background-color: #750d37;
+}
+.palette-4 .our-team .social .preview-icon {
+  background-color: #fff;
+  border: 2px solid #b8b8ff;
+}
+.palette-4 .our-team .name,
+.palette-4 .our-team .title {
+  color: #210124;
+}
+.palette-4 .our-team .info,
+.palette-4 .our-team .salary {
+  color: #750d37;
+}
+
 .work-icon {
   transform: translate(100px, -55px);
   font-size: 2rem;
-  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   color: #54585a;
 }
