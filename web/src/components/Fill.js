@@ -100,7 +100,7 @@ const Fill = (props) => {
             ¿Estás en búsqueda de trabajo?:<span className="asterisc">*</span>
           </span>
 
-          <label htmlFor="openToWorkSi" className="fill__label__text--openToWork">
+          <label htmlFor="openToWorkSi" className="fill__label--open">
             <input
               id="openToWorkSi"
               type="radio"
@@ -117,7 +117,8 @@ const Fill = (props) => {
             />{' '}
             SI
           </label>
-          <label htmlFor="openToWorkNo" className="fill__label__text--openToWork">
+
+          <label htmlFor="openToWorkNo" className="fill__label--open">
             <input
               id="openToWorkNo"
               type="radio"

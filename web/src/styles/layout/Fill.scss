@@ -99,6 +99,10 @@
 .div-image-work {
   display: flex;
 }
+
+.fill__label--open {
+  font-family: $font-Open;
+}
 .select{
   width: rem(120);
   height: rem(30);
@@ -107,8 +111,3 @@
   background-position: center;
   background-size: cover;
 }
-
-.fill__label__text--openToWork{
-  font: $font-Open;
-}
-

@@ -80,6 +80,10 @@ server.get('/card/:id', (req, res) => {
       return '>=50.000';
     }
   };
+
+  const openToWorkIcon =
+    userCard.openToWork === '1' ? 'fa-lock-open' : 'fa-lock';
+
   const userCardFinal = {
     palette: userCard.palette,
     name: userCard.name,
@@ -90,7 +94,7 @@ server.get('/card/:id', (req, res) => {
     github: userCard.github,
     photo: userCard.photo,
     salary: salaryText(),
-    openToWork: userCard.openToWork,
+    openToWork: openToWorkIcon,
     additionalInfo: userCard.additionalInfo,
   };
   //pinto el template de tarjetas con mis datos personalizados (del id de la url)
