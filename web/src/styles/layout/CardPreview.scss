@@ -196,7 +196,7 @@
   display: inline-block;
   height: 280px;
   width: 280px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   z-index: 1;
   position: relative;
 }
@@ -253,11 +253,17 @@
   font-size: 15px;
   color: #4e5052;
   text-transform: capitalize;
+  margin-bottom: 5px;
 }
 
 .our-team .name {
   text-transform: capitalize;
   font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-content {
+  margin-bottom: 30px;
 }
 
 .our-team .social {

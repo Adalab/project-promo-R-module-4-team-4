@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/main.css" />
   <title>Las Duquesas - Aristocratic profile-cards</title>
 </head>
@@ -25,18 +27,23 @@
               <%= name %>
             </h3>
             <h4 class="title">
-              <%= job %>
+              <%= job %> </i>
             </h4>
             <h4 class="title">
               <%= additionalInfo %>
             </h4>
-            <h5>Y voy a ganar 60.000 euros al año</h5>
+            <h5 class="salary">Sueldo esperado: <%= salary %>
+            </h5>
           </div>
           <ul class="social">
-            <li><a href="tel:<%=phone%>" class="fa fa-facebook" aria-hidden="true"></a></li>
-            <li><a href="mailto:<%=email%>" class="fa fa-twitter" aria-hidden="true"></a></li>
-            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
-            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+            <li><a href="tel:<%=phone%>" target="_blank" rel="noreferrer"><i
+                  class="preview-icon fa-solid fa-mobile-screen-button"></i></a></li>
+            <li><a href="mailto:<%=email%>" target="_blank" rel="noreferrer"><i
+                  class="preview-icon fa-regular fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/<%=linkedin%>" target="_blank" class="linkedin" rel="noreferrer"><i
+                  class="preview-icon fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/<%=github%>" target="_blank" class="github" rel="noreferrer"><i
+                  class="preview-icon fa-brands fa-github-alt"></i></a></li>
           </ul>
         </div>
       </div>

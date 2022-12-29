@@ -54,8 +54,8 @@ function CardPreview(props) {
               <h4 className="title">
                 {previewText('job', 'Front End Developer')}
               </h4>
-              <h4 className="info">{props.data.additionalInfo}</h4>
-              <h5 className="salary">{salaryText()}</h5>
+              <h4 className="title">{props.data.additionalInfo}</h4>
+              <h5 className="title">{salaryText()}</h5>
             </div>
             <ul className="social">
               <li>
