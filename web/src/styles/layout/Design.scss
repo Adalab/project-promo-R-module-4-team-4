@@ -77,6 +77,10 @@
     &__3 {
       display: flex;
     }
+
+    &__4{
+      display: flex;
+    }
   }
 }
 
@@ -140,6 +144,26 @@
 
 .light-grey-blue {
   background-color: $color-lightGrey;
+  width: 30px;
+  height: 25px;
+}
+
+/*START Fourth radio button*/
+
+.lilac {
+  background-color: $color-lilac;
+  width: 30px;
+  height: 25px;
+}
+
+.aubergine {
+  background-color: $color-aubergine;
+  width: 30px;
+  height: 25px;
+}
+
+.purple {
+  background-color: $color-purple;
   width: 30px;
   height: 25px;
 }

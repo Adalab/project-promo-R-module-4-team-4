@@ -86,9 +86,9 @@ const Fill = (props) => {
             id="salary"
             value={props.data.salary}
             onChange={handleChange}>
-            <option value="1">30.000-40.000</option>
-            <option value="2">40.000-50.000</option>
-            <option value="3"> &gt;=50.000</option>
+            <option value="1" className="fill__label__text--select">30.000-40.000</option>
+            <option value="2" className="fill__label__text--select">40.000-50.000</option>
+            <option value="3" className="fill__label__text--select"> &gt;=50.000</option>
           </select>
         </label>
 
@@ -100,7 +100,7 @@ const Fill = (props) => {
             ¿Estás en búsqueda de trabajo?:<span className="asterisc">*</span>
           </span>
 
-          <label htmlFor="openToWorkSi">
+          <label htmlFor="openToWorkSi" className="fill__label__text--openToWork">
             <input
               id="openToWorkSi"
               type="radio"
@@ -117,7 +117,7 @@ const Fill = (props) => {
             />{' '}
             SI
           </label>
-          <label htmlFor="openToWorkNo">
+          <label htmlFor="openToWorkNo" className="fill__label__text--openToWork">
             <input
               id="openToWorkNo"
               type="radio"

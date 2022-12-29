@@ -159,3 +159,39 @@
         color: $color-fadedOrange;
     }
 }
+
+.palette-4 {
+
+    .our-team .picture::before {
+        background-color: $color-aubergine;
+    }
+
+    .our-team .picture::after {
+        background-color: $color-purple;
+    }
+
+    .our-team .social {
+        background-color: $color-purple;
+    }
+
+    .our-team .social .preview-icon {
+        border: solid 2px $color-lilac;
+        background-color: white;
+    }
+
+    .our-team .name {
+        color: $color-aubergine;
+    }
+
+    .our-team .title {
+        color: $color-aubergine;
+    }
+
+    .our-team .info {
+        color: $color-purple;
+    }
+
+    .our-team .salary {
+        color: $color-purple;
+    }
+}
