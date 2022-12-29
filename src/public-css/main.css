@@ -644,6 +644,11 @@ body {
   border-radius: 50%;
   padding: 5px;
 }
+
+.palette-3 .our-team .social li a {
+  color: #210124;
+}
+
 .palette-4 .our-team .name,
 .palette-4 .our-team .title {
   color: #210124;
