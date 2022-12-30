@@ -81,8 +81,16 @@ server.get('/card/:id', (req, res) => {
     }
   };
 
-  const openToWorkIcon =
-    userCard.openToWork === '1' ? 'fa-lock-open' : 'fa-lock';
+  let openToWorkIcon = 'fa-lock-open';
+
+  if (userCard.openToWork === 0) {
+    openToWorkIcon = 'fa-lock';
+  } else {
+    openToWorkIcon = 'fa-lock-open';
+  }
+
+  // const openToWorkIcon =
+  //   userCard.openToWork === '1' ? 'fa-lock-open' : 'fa-lock';
 
   const userCardFinal = {
     palette: userCard.palette,
