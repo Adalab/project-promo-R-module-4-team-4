@@ -12,7 +12,7 @@
 Url del proyecto final: https://project-promo-r-module-4-team-4-production.up.railway.app/
 
 
-## Descripción de nuestra página web
+## Descripción 
 
 En nuestra página puedes crear una tarjeta de presentación totalmente personalizada, eligiendo el color que más te guste y añadiendo tu nombre, profesión, rango salarial, si estás buscando trabajo, foto y links a tu email, teléfono, linkedin y github.
 
@@ -31,7 +31,7 @@ Además, una vez creada la tarjeta, puedes compartirla en Twitter (opción por d
 - Ejs
 
 
-## Cómo utilizar este proyecto en tu ordenador
+## Cómo arrancar este proyecto en tu ordenador
 
 > Ten en cuenta que el editor de código que hemos usado es Visual Studio Code.
 
